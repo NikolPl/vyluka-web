@@ -33,6 +33,7 @@ header {
    min-width: 66px;
    width:40%;
    padding: 20px;
+   
  }
 
  header nav {
@@ -48,6 +49,10 @@ header {
    text-decoration: none;
    color: white;
  }
+
+ /* hamburger menu */
+
+
 
  .hero{
   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)), url(img/tym-vyluka.jpg);
@@ -74,6 +79,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  
 }
 
 .box {
@@ -181,5 +187,29 @@ footer .sponzori img{
 /* pc */
 @media(min-width:992px){
 
+  header {
+    background-color: var(--indigo);
+  }
+  
+   header img{
+     min-width: 66px;
+     width:40%;
+     padding: 20px;
+     
+   }
+  
+   header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+   
+   header nav a {
+     display: inline-block;
+     padding: 10px;
+     margin: 0px 10px;
+     text-decoration: none;
+     color: white;
+   }
 }
 
