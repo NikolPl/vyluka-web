@@ -29,12 +29,18 @@ header {
   background-color: var(--indigo);
 }
 
- header img{
-   min-width: 66px;
+header svg{
+    min-width: 66px;
    width:40%;
    padding: 20px;
-   
- }
+    fill: white;
+    stroke: white;
+}
+
+header svg:hover {
+    fill: #18B6C3;
+    stroke: #18B6C3;
+}
 
  header nav {
   display: flex;
@@ -79,7 +85,6 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
 }
 
 .box {
@@ -145,6 +150,9 @@ article img{
 
 
 /* footer */
+
+
+
 footer {
   background-color: var(--indigo);
   box-shadow: 1px 2px 10px -2px rgba(0,0,0,0.75);
@@ -153,11 +161,16 @@ footer {
 footer .soc-site{
   display: flex;
   justify-content: center;
+    flex-wrap: wrap;
   padding: 20px 0px;
 }
 footer .soc-site img{
-  max-width: 24px;
-  margin: 5px;
+  max-width: 36px;
+  margin: 10px;
+}
+
+footer h3 {
+  color: white;
 }
 
 footer .sponzori {
@@ -165,15 +178,56 @@ footer .sponzori {
   flex-wrap: wrap;
 }
 
-footer .sponzori h3{
+footer h3{
   display: block;
   width: 100%;
+    text-align: center;
 }
 
-footer .sponzori img{
-  max-width:40%;
+footer .sponzori svg{
   margin: 15px;
+    fill: white;
+    stroke: white;
 }
+
+footer .sponzori svg:hover {
+    fill: #E50046;
+    stroke: #E50046;
+}
+
+/* kontakty */
+
+.kontakty-box {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  text-align: center;
+  padding:10px;
+  margin:0px;
+  margin-top: 0px;
+}
+
+main h1 {
+  text-align: center;
+  padding:28px;
+  margin: 0px;
+}
+
+main h2 {
+  text-align: center;
+  padding:0px;
+  margin: 0px;
+  
+}
+main h3 {
+  text-align: center;
+  color: var(--sedoModra);
+  padding-top: 5px;
+  margin: 0px; 
+}
+
+
+
 
 /* vetsi mobily */
 @media(min-width:550px){
