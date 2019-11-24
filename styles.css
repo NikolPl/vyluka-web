@@ -1,8 +1,17 @@
+/* Components */
+@import "components/header.css";
+@import "components/box.css";
+@import "components/footer.css";
 
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
 
-:root{
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+:root {
   /* zakladni barvy */
   --indigo: #311E61;
   --karmin: #E50046;
@@ -18,6 +27,7 @@ html { box-sizing: border-box; }
   --modra: #058EC2;
   --tmaveModra: #241E46;
 }
+
 h1 {
   text-align: center;
   padding: 28px;
@@ -26,187 +36,41 @@ h1 {
 
 body {
   font-family: 'Rubik', sans-serif;
-  margin:0px;
+  margin: 0px;
   font-size: 16px;
-  padding-top:58px;
+  padding-top: 58px;
 }
 
-/* header */
-/* header {
-  background-color: var(--indigo);
-}
-
-header svg{
-    min-width: 66px;
-   width:40%;
-   padding: 20px;
-    fill: white;
-    stroke: white;
-}
-
-header svg:hover {
-    fill: #18B6C3;
-    stroke: #18B6C3;
-}
-
- header nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
- }
- 
- header nav a {
-   display: inline-block;
-   padding: 10px;
-   margin: 0px 10px;
-   text-decoration: none;
-   color: white;
- } */
-
- /* hamburger menu */
-
-
- .header {
-  background-color: var(--indigo);
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-  top:0;
-}
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-}
-.header li a {
-  display: block;
-  padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
-  text-decoration: none;
-}
-.header li a:hover,
-.header .menu-btn:hover {
-  border-bottom: 3px solid red;
-}
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-.header .logo svg{
-  fill: white;
-  min-width: 66px;
-}
-.header nav .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-.header .menu-icon .navicon {
-  background: white;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: white;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-.header .menu-btn {
-  display: none;
-}
-.header .menu-btn:checked ~ nav .menu {
-  max-height: 240px;
-}
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-@media (min-width: 768px) {
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
-}
-
- .hero{
-  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)), url(img/tym-vyluka.jpg);
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(img/tym-vyluka.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  
-  margin:0px;
- }
- @media screen and (min-width:768px){
-  .hero{
+  margin: 0px;
+}
+
+@media screen and (min-width:768px) {
+  .hero {
     min-height: 450px;
   }
+}
 
- }
- .hero h1{
-   margin: 0px;
-   color: white;
-   padding: 30px 20px 40px 20px;
-   font-size: 28px;
-   text-align: center;
- }
- .hero h2{
-   font-weight: 300;
-   color: white;
-   text-align: center;
-   font-size: 16px; 
-   padding: 10px 20px 15px 20px;
-   margin:0px;
- }
+.hero h1 {
+  margin: 0px;
+  color: white;
+  padding: 30px 20px 40px 20px;
+  font-size: 28px;
+  text-align: center;
+}
 
-
+.hero h2 {
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 20px 15px 20px;
+  margin: 0px;
+}
 
 /* text */
 
@@ -216,97 +80,75 @@ main {
   flex-wrap: wrap;
 }
 
-.box {
-  text-align: center;
-  background-color: var(--indigo);
-  color: var(--indigo);
-  margin:20px 20px;
-padding: 20px 15px;
-  border: 1px soild var(--svetlaModra);
-  border-radius: 5px;
-  box-shadow: 1px 1px 2px rgb(150, 150, 150);
-}
-
-.box p{
-  margin: 0px;
-  line-height: 1.5;
-  color: white;
-}
-
-.box a{
-  text-decoration: none;
-  display: inline-block;
-  margin-top:20px;
-  padding: 10px;
-  border: 1px solid var(--zluta);
-  border-radius: 5px;
-  color: white;
-  text-align: center;
-  background-color: var(--oranzova);
-
-}
-@media(min-width:768px){
-  .box{
-    width: 400px;
-  }
-}
-.box-wrapper{
-  display: flex;
-    justify-content: center;
-}
-
-
-main section{
+main section {
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
-.description{
+
+.description {
   width: 90%;
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
 }
+@media(min-width: 768px){
+  .arrow{
+    display: none;
+   }
+}
 
-.button{
+
+.button {
   box-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
+
 section a {
   text-decoration: none;
-  padding:10px;
-  border:1px solid --karmin;
+  padding: 10px;
+  border: 1px solid --karmin;
   background-color: var(--karmin);
-  color:white;
+  color: white;
   border-radius: 5px;
 }
-section .red-button{
+
+section .red-button {
   margin-top: 50px;
 }
 
 section article {
-  margin:20px 0px;
+  margin: 20px 0px;
+
+}
+@media(min-width: 768px){
+  section article {
+    margin: auto;
+  
+  }
 }
 
-section article p{
-text-align: center;
+
+section article p {
+  text-align: center;
 }
-article img{
+
+article img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
   position: relative;
   border: 5px solid var(--svetlaModra)
-
 }
-section article img{
+
+section article img {
   display: block;
   margin: 0 auto;
-
 }
-section article img::before{
+
+section article img::before {
   content: "";
   display: block;
   width: 100%;
@@ -315,50 +157,40 @@ section article img::before{
   position: absolute;
   top: 0;
   left: 0;
-
 }
-.bubble{
+
+.bubble {
   position: relative;
   background-color: var(--svetlaModra);
   padding: 8px;
-  margin-top: 15px;
+  margin: 20px auto 32px;
   border-radius: 10px;
   font-style: italic;
-  
 }
-@media(min-width:768px){
-  .bubble{
+.bubble-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+.heading{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+
+@media(min-width:768px) {
+  .bubble {
     max-width: 400px;
+  }
+  .bubble-wrapper{
+    flex-direction: row;
   }
 }
 
-
-/* .icon-base{
-  position: relative;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-.icon-base:before{
-  content: "";
-  background-image: url(img/tym-vyluka.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  border-radius: 50%;
-}
-.icon-base:after{
-  content: "";
-  background-color: var(--indigo);
-  opacity: 0.5;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  border-radius: 50%;
-} */
-article:nth-child(even) .bubble:after{
+article:nth-child(even) .bubble:after {
   content: '';
   border: 10px solid transparent;
   border-left: 10px solid var(--svetlaModra);
@@ -368,7 +200,8 @@ article:nth-child(even) .bubble:after{
   left: 50%;
   margin-left: 90px;
 }
-article:nth-child(odd) .bubble:after{
+
+article:nth-child(odd) .bubble:after {
   content: '';
   border: 10px solid transparent;
   border-right: 10px solid var(--svetlaModra);
@@ -379,56 +212,6 @@ article:nth-child(odd) .bubble:after{
   margin-left: -90px;
 }
 
-
-
-
-/* footer */
-
-
-
-footer {
-  background-color: var(--indigo);
-  box-shadow: 1px 2px 10px -2px rgba(0,0,0,0.75);
-}
-
-footer .soc-site{
-  display: flex;
-  justify-content: center;
-    flex-wrap: wrap;
-  padding: 20px 0px;
-}
-footer .soc-site img{
-  max-width: 36px;
-  margin: 10px;
-}
-
-footer h3 {
-  color: white;
-}
-
-footer .sponzori {
-  display: flex;
-  flex-wrap: wrap;
-  
-}
-
-footer h3{
-  display: block;
-  width: 100%;
-    text-align: center;
-}
-
-footer .sponzori svg{
-  margin: 15px;
-    fill: white;
-    stroke: white;
-}
-
-footer .sponzori svg:hover {
-    fill: #E50046;
-    stroke: #E50046;
-}
-
 /* kontakty */
 
 .kontakty-box {
@@ -436,71 +219,42 @@ footer .sponzori svg:hover {
   /* justify-content: center; */
   flex-direction: column;
   text-align: center;
-  padding:10px;
-  margin:0px;
+  padding: 10px;
+  margin: 0px;
   margin-top: 0px;
 }
 
 main h1 {
   text-align: center;
-  padding:28px;
+  padding: 28px;
   margin: 0px;
 }
 
 main h2 {
   text-align: center;
-  padding:0px;
+  padding: 0px;
   margin: 0px;
-  
 }
+
 main h3 {
   text-align: center;
-  color: var(--sedoModra);
+  color: var(--tyrkys);
   padding-top: 5px;
-  margin: 0px; 
+  margin: 0px;
 }
 
 /* co delame */
 
 .text {
-  padding:15px;
+  padding: 15px;
 }
 
 /* vetsi mobily */
-@media(min-width:550px){
 
-}
+@media(min-width:550px) {}
 
 /* tablety */
-@media(min-width:768px){
 
-}
+@media(min-width:768px) {}
+
 /* pc */
-@media(min-width:992px){
-
-  header {
-    background-color: var(--indigo);
-  }
-  
-   header img{
-     min-width: 66px;
-     width:40%;
-     padding: 20px;
-     
-   }
-  
-   header nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-   }
-   
-   header nav a {
-     display: inline-block;
-     padding: 10px;
-     margin: 0px 10px;
-     text-decoration: none;
-     color: white;
-   }
-}
-
