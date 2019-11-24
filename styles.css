@@ -108,6 +108,7 @@ main {
 padding: 20px 15px;
   border: 1px soild var(--svetlaModra);
   border-radius: 5px;
+  box-shadow: 1px 1px 2px rgb(150, 150, 150);
 }
 
 .box p{
@@ -121,11 +122,11 @@ padding: 20px 15px;
   display: inline-block;
   margin-top:20px;
   padding: 10px;
-  border: 1px solid var(--modra);
+  border: 1px solid var(--zluta);
   border-radius: 5px;
   color: white;
   text-align: center;
-  background-color: var(--modra);
+  background-color: var(--oranzova);
 
 }
 
@@ -136,7 +137,16 @@ main section{
   align-items: center;
   margin-bottom:20px;
 }
+.description{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
 
+.button{
+  box-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
 section a {
   text-decoration: none;
   padding:10px;
