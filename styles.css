@@ -1,3 +1,4 @@
+
 html { box-sizing: border-box; }
 *, :after, :before { box-sizing: inherit; }
 
@@ -244,6 +245,16 @@ padding: 20px 15px;
   background-color: var(--oranzova);
 
 }
+@media(min-width:768px){
+  .box{
+    width: 400px;
+  }
+}
+.box-wrapper{
+  display: flex;
+    justify-content: center;
+}
+
 
 main section{
   padding: 20px;
@@ -313,7 +324,15 @@ section article img::before{
   margin-top: 15px;
   border-radius: 10px;
   font-style: italic;
+  
 }
+@media(min-width:768px){
+  .bubble{
+    max-width: 400px;
+  }
+}
+
+
 /* .icon-base{
   position: relative;
   width: 100px;
