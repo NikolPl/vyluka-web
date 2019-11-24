@@ -17,6 +17,11 @@ html { box-sizing: border-box; }
   --modra: #058EC2;
   --tmaveModra: #241E46;
 }
+h1 {
+  text-align: center;
+  padding: 28px;
+  margin: 0px;
+}
 
 body {
   font-family: 'Rubik', sans-serif;
@@ -72,9 +77,17 @@ header svg:hover {
  .hero h1{
    margin: 0px;
    color: white;
-   padding: 20px;
+   padding: 30px 20px 40px 20px;
    font-size: 28px;
    text-align: center;
+ }
+ .hero h2{
+   font-weight: 300;
+   color: white;
+   text-align: center;
+   font-size: 16px; 
+   padding: 10px 20px 15px 20px;
+   margin:0px;
  }
 
 
@@ -252,6 +265,7 @@ footer h3 {
 footer .sponzori {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 footer h3{
