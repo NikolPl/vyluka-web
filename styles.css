@@ -27,10 +27,11 @@ body {
   font-family: 'Rubik', sans-serif;
   margin:0px;
   font-size: 16px;
+  padding-top:58px;
 }
 
 /* header */
-header {
+/* header {
   background-color: var(--indigo);
 }
 
@@ -59,20 +60,134 @@ header svg:hover {
    margin: 0px 10px;
    text-decoration: none;
    color: white;
- }
+ } */
 
  /* hamburger menu */
 
 
+ .header {
+  background-color: var(--indigo);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top:0;
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+.header li a:hover,
+.header .menu-btn:hover {
+  border-bottom: 3px solid red;
+}
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.header .logo svg{
+  fill: white;
+  min-width: 66px;
+}
+.header nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+.header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+.header .menu-btn {
+  display: none;
+}
+.header .menu-btn:checked ~ nav .menu {
+  max-height: 240px;
+}
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+@media (min-width: 768px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
 
  .hero{
   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)), url(img/tym-vyluka.jpg);
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-
+  
   margin:0px;
+ }
+ @media screen and (min-width:768px){
+  .hero{
+    min-height: 450px;
+  }
+
  }
  .hero h1{
    margin: 0px;
