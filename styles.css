@@ -316,8 +316,11 @@ main h3 {
   margin: 0px; 
 }
 
+/* co delame */
 
-
+.text {
+  padding:15px;
+}
 
 /* vetsi mobily */
 @media(min-width:550px){
