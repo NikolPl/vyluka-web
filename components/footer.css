@@ -19,18 +19,22 @@ footer .soc-site img{
 
 footer h3 {
   color: white;
+  display: block;
+  width: 100%;
+    text-align: center;
+}
+
+footer h4 {
+  color: white;
+  display: block;
+  width: 100%;
+    text-align: center;
 }
 
 footer .sponzori {
   display: flex;
   flex-wrap: wrap;
   
-}
-
-footer h3{
-  display: block;
-  width: 100%;
-    text-align: center;
 }
 
 footer .sponzori svg{

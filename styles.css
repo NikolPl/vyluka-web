@@ -228,6 +228,7 @@ main h1 {
   text-align: center;
   padding: 28px;
   margin: 0px;
+  margin-top:20px;
 }
 
 main h2 {
@@ -249,12 +250,3 @@ main h3 {
   padding: 15px;
 }
 
-/* vetsi mobily */
-
-@media(min-width:550px) {}
-
-/* tablety */
-
-@media(min-width:768px) {}
-
-/* pc */
