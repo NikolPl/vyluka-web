@@ -17,6 +17,11 @@ html { box-sizing: border-box; }
   --modra: #058EC2;
   --tmaveModra: #241E46;
 }
+h1 {
+  text-align: center;
+  padding: 28px;
+  margin: 0px;
+}
 
 body {
   font-family: 'Rubik', sans-serif;
