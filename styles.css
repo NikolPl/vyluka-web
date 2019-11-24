@@ -72,9 +72,17 @@ header svg:hover {
  .hero h1{
    margin: 0px;
    color: white;
-   padding: 20px;
+   padding: 30px 20px 40px 20px;
    font-size: 28px;
    text-align: center;
+ }
+ .hero h2{
+   font-weight: 300;
+   color: white;
+   text-align: center;
+   font-size: 16px; 
+   padding: 10px 20px 15px 20px;
+   margin:0px;
  }
 
 
