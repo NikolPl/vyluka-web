@@ -159,13 +159,19 @@ header svg:hover {
   top: 0;
 }
 @media (min-width: 768px) {
+  .header ul {
+    background-color: var(--indigo);
+  }
+  
   .header li {
     float: left;
   }
   .header li a {
     padding: 20px 30px;
+    color:white;
+    border-right: var(--indigo);
   }
-  .header .menu {
+  .header nav .menu {
     clear: none;
     float: right;
     max-height: none;
@@ -314,6 +320,10 @@ section article img::before{
   border-radius: 10px;
   font-style: italic;
 }
+
+.bubble .podpis {
+  color:var(--modra);
+}
 /* .icon-base{
   position: relative;
   width: 100px;
@@ -359,6 +369,7 @@ article:nth-child(odd) .bubble:after{
   left: 50%;
   margin-left: -90px;
 }
+
 
 
 
