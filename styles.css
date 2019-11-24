@@ -76,6 +76,9 @@ main {
   flex-wrap: wrap;
 }
 
+  margin:0 0 40px 0;
+}
+
 .box {
   text-align: center;
   background-color: var(--indigo);
@@ -242,6 +245,7 @@ main h1 {
   text-align: center;
   padding:28px;
   margin: 0px;
+  margin-top:20px;
 }
 
 main h2 {
@@ -272,6 +276,3 @@ main h3 {
 @media(min-width:768px){
 
 }
-/* pc */
-
-

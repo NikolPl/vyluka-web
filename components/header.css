@@ -27,13 +27,13 @@
   display: block;
   float: left;
   font-size: 2em;
-  padding: 10px 20px;
+  padding: 20px 20px 0px 20px;
   text-decoration: none;
 }
 
 .header .logo svg{
   fill: white;
-  min-width: 66px;
+  min-width: 80px;
 }
 .header nav .menu {
   clear: both;
@@ -44,7 +44,7 @@
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 35px 20px;
   position: relative;
   user-select: none;
 }
@@ -100,7 +100,7 @@
     float: left;
   }
   .header li a {
-    padding: 20px 30px;
+    padding: 25px 30px;
     color:white;
     border-right: var(--indigo);
   }
