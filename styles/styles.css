@@ -1,0 +1,20 @@
+/* COMPONENTS IMPORT */
+@import "header/header.css";
+@import "body-section/body-section.css";
+@import "footer/footer.css";
+@import "colors.css";
+
+/* Zde je jen opravdu základní styl - všechny jednotlivé prvky jsou naimportovány (
+  obsahují v sobě další menší naimportované části */
+
+html {
+  box-sizing: border-box;
+}
+
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+body {
+  
+}
