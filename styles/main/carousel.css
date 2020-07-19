@@ -1,0 +1,13 @@
+@import "carousel-sponsors.css";
+@import "carousel-references.css";
+
+.mySlides1, .mySlides2 {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 320px;
+  height:130px;
+  /* position: relative;*/
+  margin: auto;
+}
+

@@ -1,6 +1,6 @@
 /* COMPONENTS IMPORT */
 @import "header/header.css";
-@import "body-section/body-section.css";
+@import "main/main.css";
 @import "footer/footer.css";
 @import "colors.css";
 
@@ -9,6 +9,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 *, :after, :before {
@@ -16,5 +17,23 @@ html {
 }
 
 body {
-  
+  margin: 0px;
+  max-width: 576px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.indigo {
+  font-weight: bold;
+  color: var(--indigo);
+  font-size: 18px;
+}
+
+.margin_top {
+  margin-top: 20px;
 }
