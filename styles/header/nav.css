@@ -1,6 +1,12 @@
+@import "../colors.css";
+
+/* Menu desktop */
+
 .nav-desktop{
   display: none;
 }
+
+/* Menu mobile */
 
 .nav-mobile{
   align-self: center;
@@ -15,4 +21,46 @@
   padding-left: 10px;
   vertical-align: middle;
   line-height: 60px;
+}
+
+.nav-dropdown{
+  display: none;
+}
+.nav-dropdown-items{
+  margin-top: 60px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: var(--karmin);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.nav-dropdown-items a{
+  padding: 20px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.btn-close{
+  background-color: var(--gold);
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.btn-close:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "x";
+  font-size: 25px; 
+  color: black;
+  line-height: 40px;
+  text-align: center;
 }
