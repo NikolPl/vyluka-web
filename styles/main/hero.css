@@ -26,3 +26,15 @@
   padding:0px 15px 50px 15px;
   font-weight: 200;
 }
+
+@media(min-width:580px){
+
+  .hero {
+    align-items: center;
+  }
+
+  .hero h1, .hero p{
+    max-width: 80%;
+    width:60%;
+  }
+}
